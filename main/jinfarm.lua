@@ -16,7 +16,7 @@ while getgenv().Jin.AutoEquip do wait()
         end
         local FindChakra = game:GetService("Players").LocalPlayer.statz.mastery.chakra
         if FindChakra.Value <= 6000 then
-            print("Wot"..FindChakra)
+            return
         else
             local A_1 = "addstat"
             local A_2 = "chakra"
