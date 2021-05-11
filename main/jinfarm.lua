@@ -14,8 +14,8 @@ while getgenv().Jin.AutoEquip do wait()
             Event:FireServer(A_1, A_2)
         end
         local FindChakra = game:GetService("Players").LocalPlayer.statz.mastery.chakra
-        if FindChakra.Value == 6000 then
-            return
+        if FindChakra.Value == getgenv().Jin.Chakra or FindChakra.Value >= getgenv().Jin.Chakra or FindChakra.Value <= getgenv().Jin.Chakra then
+            print("Wait")
         else
             local A_1 = "addstat"
             local A_2 = "chakra"
@@ -24,8 +24,8 @@ while getgenv().Jin.AutoEquip do wait()
             Event:FireServer(A_1, A_2, A_3)
         end
         local FindNin = game:GetService("Players").LocalPlayer.statz.mastery.ninjutsu
-        if FindNin.Value == 6000 then
-            return
+        if FindNin.Value == getgenv().Jin.Ninjutsu or FindNin.Value >= getgenv().Jin.Ninjutsu or FindNin.Value <= getgenv().Jin.Ninjutsu then
+            print("Wait NIn")
         else
             local A_1 = "addstat"
             local A_2 = "ninjutsu"
