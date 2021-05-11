@@ -1,0 +1,2 @@
+# shindo-life
+scripts
