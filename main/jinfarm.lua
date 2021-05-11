@@ -16,7 +16,7 @@ while getgenv().Jin.AutoEquip do wait()
         end
         local FindChakra = game:GetService("Players").LocalPlayer.statz.mastery.chakra
         if FindChakra.Value >= getgenv().Jin.Chakra then
-            return
+            print("Wot"..FindChakra)
         else
             local A_1 = "addstat"
             local A_2 = "chakra"
@@ -26,7 +26,7 @@ while getgenv().Jin.AutoEquip do wait()
         end
         local FindNin = game:GetService("Players").LocalPlayer.statz.mastery.ninjutsu
         if FindNin.Value >= getgenv().Jin.Ninjutsu then
-            return
+            print("Wot"..Findnin)
         else
             local A_1 = "addstat"
             local A_2 = "ninjutsu"
