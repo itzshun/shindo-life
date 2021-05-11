@@ -5,7 +5,6 @@ while getgenv().Jin.AutoEquip do wait()
         local FindBijuu = game:GetService("Players").LocalPlayer.Character:FindFirstChild("bodyeffect")
         local FindMode = game:GetService("Players").LocalPlayer.Character.combat.mode
         if FindBijuu and FindMode.Value >= getgenv().Jin.MaxMD then
-            print("Equipped")
             KeyState = "zend"
         elseif not FindBijuu and FindMode.Value >= getgenv().Jin.MaxMD then
             KeyState = "z"
